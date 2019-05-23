@@ -7,12 +7,15 @@ class Palavra(object):
     def __init__(self, palavra, dica):
         self.palavra = palavra
         self.dica = dica
+        self.erros = []
+        self.acerto = []
+        self.chances = 6
 
-    def conferirLetra(letra):
+    def conferirLetra(self,letra):
         if letra in self.palavra:
             return True
 
-    def conferirPalavra(palavra):
+    def conferirPalavra(self,palavra):
         if palavra == self.palavra:
             return True
         else:
